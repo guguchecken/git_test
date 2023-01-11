@@ -20,7 +20,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: guguducken/eks-auto-release-action@main
         with:
-          token_action: ${{ secrets.TOKEN_ACTION }}
+          token-action: ${{ secrets.TOKEN_ACTION }}
           k8s-server-url: ${{ secrets.K8S_URL }}
           k8s-token: ${{ secrets.TOKEN_K8S }}
           expired-time: "2 0 0 0 0"
