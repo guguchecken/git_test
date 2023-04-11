@@ -21,5 +21,5 @@ jobs:
       - uses: guguducken/issue-bot-action@no_assign_check
         with:
           token_action: ${{ secrets.TOKEN_ACTION }}
-          repos: "guguchecken/git_test"
-          assignees: "guguducken"
+          repos: "guguchecken/git_test,guguchecken/me_test"
+          assignees: "guguchecken"
