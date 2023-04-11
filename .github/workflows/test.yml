@@ -18,11 +18,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: guguducken/eks-auto-release-action@main
+      - uses: guguducken/issue-bot-action@no_assign_check
         with:
-          token-action: ${{ secrets.TOKEN_ACTION }}
-          k8s-server-url: ${{ secrets.K8S_URL }}
-          k8s-token: ${{ secrets.TOKEN_K8S }}
-          expired-time: "2 0 0 0 0"
-          labels: "kind/bug"
-          exclusive: "kube-system,468413122983,cicd"
+          token_action: ${{ secrets.TOKEN_ACTION }}
+          repos: "guguchecken/git_test"
+          assignees: "guguducken"
